@@ -27,7 +27,6 @@ List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for 
 </p>
 
 [![Github release](https://img.shields.io/github/v/release/anyblades/pico?color=0172ad&logo=github&logoColor=white)](https://github.com/anyblades/pico/releases/latest)
-[![npm version](https://img.shields.io/npm/v/@anyblades/pico?color=0172ad)](https://www.npmjs.com/package/@anyblades/pico)
 [![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/anyblades/pico/blob/master/LICENSE.md)
 [![GitHub Repo stars](https://img.shields.io/github/stars/anyblades/pico?label=Star)](https://github.com/anyblades/pico)
 
