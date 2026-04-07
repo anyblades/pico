@@ -1,6 +1,6 @@
 {
   "name": "@anyblades/pico",
-  "version": "2.1.1-alpha",
+  "version": "2.1.1-alpha.2",
   "description": "Minimal CSS Framework for semantic HTML",
   "author": "Lucas Larroche",
   "contributors": [
@@ -40,11 +40,11 @@
     "lint:prettier": "prettier --write --log-level silent 'src/**/*.css'",
     "build:css": "postcss --config css 'src/!(_)*.css' --dir css --no-map",
     "build:minify": "cleancss -O1 --with-rebase --batch --batch-suffix .min css/*.css !css/*.min.css",
-    "prelint": "echo '[@picocss/pico] ✨ Lint'",
-    "prebuild:css": "echo '[@picocss/pico] ✨ Compile'",
-    "prebuild:minify": "echo '[@picocss/pico] ✨ Minify'",
-    "start": "echo '\\033[96m[@picocss/pico] ✨ Start\\033[0m'",
-    "done": "echo '\\033[32m[@picocss/pico] ✨ Done\\033[0m'"
+    "prelint": "echo '[@anyblades/pico] ✨ Lint'",
+    "prebuild:css": "echo '[@anyblades/pico] ✨ Compile'",
+    "prebuild:minify": "echo '[@anyblades/pico] ✨ Minify'",
+    "start": "echo '\\033[96m[@anyblades/pico] ✨ Start\\033[0m'",
+    "done": "echo '\\033[32m[@anyblades/pico] ✨ Done\\033[0m'"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
