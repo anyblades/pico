@@ -63,10 +63,16 @@ There are 4 ways to get started with pico.css:
 
 ### Install manually
 
-[Download Pico](https://github.com/picocss/pico/archive/refs/heads/main.zip) and link `/css/pico.min.css` in the `<head>` of your website.
+[Download Pico](https://github.com/anyblades/pico/archive/refs/heads/main.zip) and link `/css/pico.min.css` in the `<head>` of your website.
 
 ```html
 <link rel="stylesheet" href="css/pico.min.css" />
+```
+
+Or even Pico+[Blades](https://blades.ninja/) version instead:
+
+```html
+<link rel="stylesheet" href="css/pico.blades.min.css" />
 ```
 
 ### Usage from CDN
@@ -74,7 +80,19 @@ There are 4 ways to get started with pico.css:
 Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@anyblades/pico) to link pico.css.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@anyblades/pico@2/css/pico.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.min.css"
+/>
+```
+
+Or Pico+[Blades](https://blades.ninja/):
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.blades.min.css"
+/>
 ```
 
 ### Install with NPM
@@ -101,6 +119,8 @@ Then, import Pico into your <ins>CSS</ins> <del>SCSS file with [@use](https://sa
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/pico.min.css">
+    <!--Or Pico+Blades together: -->
+    <!--link rel="stylesheet" href="css/pico.blades.min.css"-->
     <title>Hello world!</title>
   </head>
   <body>
@@ -191,4 +211,4 @@ If you are interested in contributing to Pico CSS, please read our [contributing
 
 ## Copyright and license
 
-Licensed under the [MIT License](https://github.com/picocss/pico/blob/master/LICENSE.md).
+Licensed under the [MIT License](https://github.com/anyblades/pico/blob/master/LICENSE.md).
