@@ -12,16 +12,16 @@
 <p>
   <a href="https://picocss.com" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-light.svg">
-      <img alt="Pico CSS" src="https://raw.githubusercontent.com/picocss/pico/HEAD/.github/logo-light.svg" width="auto" height="60">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg">
+      <img alt="Pico CSS" src="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg" width="auto" height="60">
     </picture>
   </a>
 </p>
 
-[![Github release](https://img.shields.io/github/v/release/picocss/pico?color=0172ad&logo=github&logoColor=white)](https://github.com/picocss/pico/releases/latest)
-[![npm version](https://img.shields.io/npm/v/@picocss/pico?color=0172ad)](https://www.npmjs.com/package/@picocss/pico)
-[![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/picocss/pico/blob/master/LICENSE.md)
+[![Github release](https://img.shields.io/github/v/release/anyblades/pico?color=0172ad&logo=github&logoColor=white)](https://github.com/anyblades/pico/releases/latest)
+[![npm version](https://img.shields.io/npm/v/@anyblades/pico?color=0172ad)](https://www.npmjs.com/package/@anyblades/pico)
+[![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/anyblades/pico/blob/master/LICENSE.md)
 [![GitHub Repo stars](https://img.shields.io/github/stars/anyblades/pico?label=Star)](https://github.com/anyblades/pico)
 
 ## Minimal CSS Framework for Semantic HTML
