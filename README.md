@@ -1,3 +1,13 @@
+> [!NOTE]
+> This is a community-driven successor to the [Pico CSS framework](https://github.com/picocss/pico) with a few simple goals:
+> 1. **Maintain** `pico` minimally until its creator returns.
+> 2. **Focus** exclusively on the `pico.css` version, similar to how [simple.css](https://github.com/kevquirk/simple.css) is maintained (check [@Yohn's fork](https://github.com/Yohn/PicoCSS) for Sass version).
+> 3. **Keep** all non-original additions in [blades.css](https://github.com/anyblades/blades), shipped as `pico.blades.css` — a drop-in compatible replacement for `pico.css`.
+> 
+> [Read more](https://github.com/picocss/pico/issues/640#issuecomment-4186674269)
+
+---
+
 <p>
   <a href="https://picocss.com" target="_blank">
     <picture>
