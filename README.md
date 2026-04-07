@@ -9,8 +9,9 @@
 
 ---
 
-Fixed:
+List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for [@picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd):
 
+- 🐞[#701: Nav dropdowns display error with Firefox](https://github.com/picocss/pico/issues/701)
 - 🐞[#727: Fix dropdown summary ul offscreen](https://github.com/picocss/pico/pull/727) in Safari
 
 ---
