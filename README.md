@@ -9,6 +9,12 @@
 
 ---
 
+Fixed:
+
+- 🐞[#727: Fix dropdown summary ul offscreen](https://github.com/picocss/pico/pull/727) in Safari
+
+---
+
 <p>
   <a href="https://picocss.com" target="_blank">
     <picture>
