@@ -79,20 +79,20 @@ Or even Pico+[Blades](https://blades.ninja/) version instead:
 
 Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@anyblades/pico) to link pico.css.
 
+<!--prettier-ignore-->
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.min.css"
-/>
+<link rel="stylesheet" href="
+  https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.min.css
+"/>
 ```
 
 Or Pico+[Blades](https://blades.ninja/):
 
+<!--prettier-ignore-->
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.blades.min.css"
-/>
+<link rel="stylesheet" href="
+  https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.blades.min.css
+"/>
 ```
 
 ### Install with NPM
@@ -119,7 +119,7 @@ Then, import Pico into your <ins>CSS</ins> <del>SCSS file with [@use](https://sa
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/pico.min.css">
-    <!--Or Pico+Blades together: -->
+    <!--or Pico+Blades together: -->
     <!--link rel="stylesheet" href="css/pico.blades.min.css"-->
     <title>Hello world!</title>
   </head>
