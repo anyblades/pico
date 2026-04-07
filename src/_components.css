@@ -176,7 +176,7 @@ details.dropdown > summary:not([role])[aria-invalid="true"] {
 }
 
 nav details.dropdown {
-  display: inline;
+  display: inline-block;
   margin: calc(var(--pico-nav-element-spacing-vertical) * -1) 0;
 }
 nav details.dropdown > summary::after {
