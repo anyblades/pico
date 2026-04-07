@@ -1,9 +1,10 @@
 > [!NOTE]
 > This is a community-driven successor to the [Pico CSS framework](https://github.com/picocss/pico) with a few simple goals:
+>
 > 1. **Maintain** `pico` minimally until its creator returns.
 > 2. **Focus** exclusively on the `pico.css` version, similar to how [simple.css](https://github.com/kevquirk/simple.css) is maintained (check [@Yohn's fork](https://github.com/Yohn/PicoCSS) for Sass version).
 > 3. **Keep** all non-original additions in [blades.css](https://github.com/anyblades/blades), shipped as `pico.blades.css` — a drop-in compatible replacement for `pico.css`.
-> 
+>
 > [Read more](https://github.com/picocss/pico/issues/640#issuecomment-4186674269)
 
 ---
@@ -21,7 +22,7 @@
 [![Github release](https://img.shields.io/github/v/release/picocss/pico?color=0172ad&logo=github&logoColor=white)](https://github.com/picocss/pico/releases/latest)
 [![npm version](https://img.shields.io/npm/v/@picocss/pico?color=0172ad)](https://www.npmjs.com/package/@picocss/pico)
 [![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/picocss/pico/blob/master/LICENSE.md)
-[![X (formerly Twitter)](https://img.shields.io/twitter/url/https/twitter.com/picocss.svg?style=social&label=Follow%20%40picocss)](https://x.com/picocss)
+[![GitHub Repo stars](https://img.shields.io/github/stars/anyblades/pico?label=Star)](https://github.com/anyblades/pico)
 
 ## Minimal CSS Framework for Semantic HTML
 
@@ -31,7 +32,7 @@ Write HTML, Add Pico CSS, and Voilà!
 
 ## What’s new in v2?
 
-Pico v2.0 features better accessibility, easier customization with SASS, a complete color palette, a new group component, and 20 precompiled color themes totaling over 100 combinations accessible via CDN.
+Pico v2.0 features better accessibility, easier <ins>maintenance with modern CSS</ins> <del>customization with SASS, a complete color palette, a new group component, and 20 precompiled color themes totaling over 100 combinations</del> accessible via CDN.
 
 [Read more](https://picocss.com/docs/v2)
 
@@ -65,40 +66,30 @@ There are 4 ways to get started with pico.css:
 [Download Pico](https://github.com/picocss/pico/archive/refs/heads/main.zip) and link `/css/pico.min.css` in the `<head>` of your website.
 
 ```html
-<link rel="stylesheet" href="css/pico.min.css">
+<link rel="stylesheet" href="css/pico.min.css" />
 ```
 
 ### Usage from CDN
 
-Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@picocss/pico) to link pico.css.
+Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@anyblades/pico) to link pico.css.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@anyblades/pico@2/css/pico.min.css" />
 ```
 
 ### Install with NPM
 
 ```shell
-npm install @picocss/pico
+npm install @anyblades/pico
 ```
 
-Or
+Then, import Pico into your <ins>CSS</ins> <del>SCSS file with [@use](https://sass-lang.com/documentation/at-rules/use)</del>:
 
-```shell
-yarn add @picocss/pico
+```css
+@import "pico";
 ```
 
-Then, import Pico into your SCSS file with [@use](https://sass-lang.com/documentation/at-rules/use):
-
-```SCSS
-@use "pico";
-```
-
-### Install with Composer
-
-```shell
-composer require picocss/pico
-```
+### <del>Install with Composer</del>
 
 ### Starter HTML template
 
@@ -120,56 +111,11 @@ composer require picocss/pico
 </html>
 ```
 
-## Class-less version
-
-Pico provides a `.classless` version.
-
-In this version, `<header>`, `<main>`, and `<footer>` inside `<body>` act as containers to define a centered or a fluid viewport.
-
-Use the default `.classless` version if you need centered viewports:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-/>
-```
-
-Or use the `.fluid.classless` version if you need a fluid container:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"
->
-```
-
-Then just write pure HTML, and it should look great:
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    >
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <main>
-      <h1>Hello, world!</h1>
-    </main>
-  </body>
-</html>
-```
+## <del>Class-less version</del>
 
 ## Limitations
 
-Pico CSS can be used without custom CSS for quick or small projects. However, it’s designed as a starting point, like a “reset CSS on steroids”. As Pico does not integrate any helpers or utilities `.classes`, this minimal CSS framework requires SCSS or CSS knowledge to build large projects.
+Pico CSS can be used without custom CSS for quick or small projects. However, it’s designed as a starting point, like a “reset CSS on steroids”. As Pico does not integrate many helpers or utility `.classes`, it requires CSS knowledge to build large projects.
 
 [Read more](https://picocss.com/docs/usage-scenarios)
 
@@ -178,17 +124,17 @@ Pico CSS can be used without custom CSS for quick or small projects. However, it
 **Getting started**
 
 - [Quick start](https://picocss.com/docs)
-- [Version picker `New`](https://picocss.com/docs/version-picker)
-- [Color schemes](https://picocss.com/docs/color-schemes)
-- [Class-less version](https://picocss.com/docs/classless)
+- <del>[Version picker `New`](https://picocss.com/docs/version-picker)</del>
+- <del>[Color schemes](https://picocss.com/docs/color-schemes)</del>
+- <del>[Class-less version](https://picocss.com/docs/classless)</del>
 - [Conditional styling `New`](https://picocss.com/docs/conditional)
 - [RTL](https://picocss.com/docs/rtl)
 
 **Customization**
 
 - [CSS Variables](https://picocss.com/docs/css-variables)
-- [Sass](https://picocss.com/docs/sass)
-- [Colors `New`](https://picocss.com/docs/colors)
+- <del>[Sass](https://picocss.com/docs/sass)</del>
+- <del>[Colors `New`](https://picocss.com/docs/colors)</del>
 
 **Layout**
 
