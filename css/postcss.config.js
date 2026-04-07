@@ -5,5 +5,6 @@ module.exports = {
       cascade: false,
     },
     "postcss-import": {},
+    "postcss-nested": {},
   },
 };
