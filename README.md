@@ -119,8 +119,9 @@ Then, import Pico into your <ins>CSS</ins> <del>SCSS file with [@use](https://sa
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/pico.min.css">
-    <!--or Pico+Blades together: -->
-    <!--link rel="stylesheet" href="css/pico.blades.min.css"-->
+    <!-- or Pico+Blades together:
+    <link rel="stylesheet" href="css/pico.blades.min.css">
+    -->
     <title>Hello world!</title>
   </head>
   <body>
