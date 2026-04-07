@@ -2,7 +2,8 @@ module.exports = {
   map: false,
   plugins: {
     autoprefixer: {
-      cascade: false
-    }
-  }
-}
+      cascade: false,
+    },
+    "postcss-import": {},
+  },
+};
