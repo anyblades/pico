@@ -56,7 +56,7 @@ With just the right amount of everything, Pico is great starting point for a cle
 ## Table of contents
 
 - [Quick start](#quick-start)
-- [Class-less version](#class-less-version)
+- <del>[Class-less version](#class-less-version)</del>
 - [Limitations](#limitations)
 - [Documentation](#documentation)
 - [Browser Support](#browser-support)
@@ -151,31 +151,39 @@ Pico CSS can be used without custom CSS for quick or small projects. However, it
 **Getting started**
 
 - [Quick start](https://picocss.com/docs)
-- <del>[Version picker `New`](https://picocss.com/docs/version-picker)</del>
+- <del>[Version picker](https://picocss.com/docs/version-picker)</del>
 - <del>[Color schemes](https://picocss.com/docs/color-schemes)</del>
 - <del>[Class-less version](https://picocss.com/docs/classless)</del>
-- [Conditional styling `New`](https://picocss.com/docs/conditional)
+- [Conditional styling](https://picocss.com/docs/conditional)
 - [RTL](https://picocss.com/docs/rtl)
 
 **Customization**
 
 - [CSS Variables](https://picocss.com/docs/css-variables)
 - <del>[Sass](https://picocss.com/docs/sass)</del>
-- <del>[Colors `New`](https://picocss.com/docs/colors)</del>
+- <del>[Colors](https://picocss.com/docs/colors)</del>
 
 **Layout**
 
 - [Container](https://picocss.com/docs/container)
 - [Landmarks & section](https://picocss.com/docs/landmarks-section)
 - [Grid](https://picocss.com/docs/grid)
-- [Overflow auto `New`](https://picocss.com/docs/overflow-auto)
+- [Overflow auto](https://picocss.com/docs/overflow-auto)
+- [Breakout elements `🥷`](https://blades.ninja/css/breakout/)
+- [Auto-columns `🥷`](https://blades.ninja/css/#auto-columns)
+- [... and more `🥷`](https://blades.ninja/css/#layout)
 
 **Content**
 
 - [Typography](https://picocss.com/docs/typography)
 - [Link](https://picocss.com/docs/link)
+- [Link icon `🥷`](https://blades.ninja/css/link-icon/)
 - [Button](https://picocss.com/docs/button)
 - [Table](https://picocss.com/docs/table)
+- [Responsive table `🥷`](https://blades.ninja/css/responsive-table/)
+- [Heading anchors `🥷`](https://blades.ninja/css/#heading-anchors)
+- [List markers `🥷`](https://blades.ninja/css/#list-markers)
+- [... and more `🥷`](https://blades.ninja/css/#content)
 
 **Forms**
 
@@ -187,18 +195,21 @@ Pico CSS can be used without custom CSS for quick or small projects. However, it
 - [Radios](https://picocss.com/docs/forms/radios)
 - [Switch](https://picocss.com/docs/forms/switch)
 - [Range](https://picocss.com/docs/forms/range)
+- [Float labels `🥷`](https://blades.ninja/css/float-label/)
 
 **Components**
 
 - [Accordion](https://picocss.com/docs/accordion)
 - [Card](https://picocss.com/docs/card)
 - [Dropdown](https://picocss.com/docs/dropdown)
-- [Group `New`](https://picocss.com/docs/group)
+- [Group](https://picocss.com/docs/group)
 - [Loading](https://picocss.com/docs/loading)
 - [Modal](https://picocss.com/docs/modal)
 - [Nav](https://picocss.com/docs/nav)
 - [Progress](https://picocss.com/docs/progress)
 - [Tooltip](https://picocss.com/docs/tooltip)
+
+**[Utilities `🥷`](https://blades.ninja/css/#utilities)**
 
 **About**
 
