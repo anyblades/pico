@@ -15,9 +15,10 @@
 
 List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for [@picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd):
 
+- 🛠️ [#670: Slow website picocss.com | box-shadow performance issues](https://github.com/picocss/pico/issues/670) & [PR#718](https://github.com/picocss/pico/pull/718)
 - 🛠️ [#721: Possible duplicate of text-align property inside the same element selector](https://github.com/picocss/pico/issues/721)
 - 🐞 [#701: Nav dropdowns display error with Firefox](https://github.com/picocss/pico/issues/701)
-- 🐞 [#727: Fix dropdown summary ul offscreen](https://github.com/picocss/pico/pull/727) in Safari
+- 🐞 [#727: Fix dropdown summary ul offscreen | in Safari](https://github.com/picocss/pico/pull/727)
 
 <!--{.unlist}-->
 
