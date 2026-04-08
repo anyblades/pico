@@ -17,7 +17,7 @@ List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for 
 ---
 
 <p>
-  <a href="https://picocss.com" target="_blank">
+  <a href="https://blades.ninja/css/pico/" target="_blank">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg">
