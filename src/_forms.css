@@ -545,7 +545,7 @@ input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type
 }
 [dir="rtl"]
   :is([type="date"], [type="datetime-local"], [type="month"], [type="time"], [type="week"]) {
-  text-align: right;
+  text-align: end;
 }
 
 /**
