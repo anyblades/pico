@@ -1,3 +1,5 @@
+<!--section:intro-->
+
 > [!NOTE]
 > This is a community-driven successor to the [Pico CSS framework](https://github.com/picocss/pico) with a few simple goals:
 >
@@ -9,10 +11,24 @@
 
 ---
 
+### Fixes in `pico.css`
+
 List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for [@picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd):
 
-- 🐞[#701: Nav dropdowns display error with Firefox](https://github.com/picocss/pico/issues/701)
-- 🐞[#727: Fix dropdown summary ul offscreen](https://github.com/picocss/pico/pull/727) in Safari
+- 🐞 [#701: Nav dropdowns display error with Firefox](https://github.com/picocss/pico/issues/701)
+- 🐞 [#727: Fix dropdown summary ul offscreen](https://github.com/picocss/pico/pull/727) in Safari
+
+<!--{.unlist}-->
+
+### Additions in `pico.blades.css`
+
+List of net new additions (on top of original `pico.css` and fixes above):
+
+<!--section:gh-only-->
+
+https://github.com/anyblades/blades#documentation
+
+<!--section:docs-->
 
 ---
 
