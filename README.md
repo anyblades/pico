@@ -21,7 +21,7 @@ List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for 
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg">
-      <img alt="Pico CSS" src="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg" width="auto" height="60">
+      <img alt="Pico CSS" src="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg" width="auto" height="60" style="max-height: 4rem">
     </picture>
   </a>
 </p>
