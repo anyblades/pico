@@ -31,7 +31,7 @@ List of net new additions (on top of original `pico.css` and fixes above):
 
 <!--section:gh-only-->
 
-https://github.com/anyblades/blades#documentation
+https://blades.ninja/css/pico/#additions-in-pico-blades-css
 
 <!--section:docs-->
 
