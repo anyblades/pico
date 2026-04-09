@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Pico CSS ✨ v2.1.3 (https://picocss.com)
+ * Pico CSS ✨ v2.1.4 (https://picocss.com)
  * Copyright 2019-2025 - Licensed under MIT
  */
 /**
@@ -2990,7 +2990,7 @@ textarea,
  * Reduce Motion Features
  */
 @media (prefers-reduced-motion: reduce) {
-  *:not([aria-busy="true"]),
+  *:not([aria-busy="true"]):not(.unreduce-motion),
   :not([aria-busy="true"])::before,
   :not([aria-busy="true"])::after {
     background-attachment: initial !important;
