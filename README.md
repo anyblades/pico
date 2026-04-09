@@ -11,6 +11,8 @@
 
 ---
 
+## Changelog
+
 ### Fixes in `pico.css`
 
 List of [@anyblades/pico fixes](https://codepen.io/anydigital/full/YPGOXWV) for [@picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd):
