@@ -39,7 +39,7 @@ textarea,
  * Reduce Motion Features
  */
 @media (prefers-reduced-motion: reduce) {
-  *:not([aria-busy="true"]),
+  *:not([aria-busy="true"]):not(.unreduce-motion),
   :not([aria-busy="true"])::before,
   :not([aria-busy="true"])::after {
     background-attachment: initial !important;

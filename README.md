@@ -91,44 +91,43 @@ There are 4 ways to get started with pico.css:
 
 ```html
 <link rel="stylesheet" href="css/pico.min.css" />
-```
 
-Or even Pico+[Blades](https://blades.ninja/) version instead:
-
-```html
+<!-- or Pico+Blades together:
 <link rel="stylesheet" href="css/pico.blades.min.css" />
+-->
 ```
 
 ### Usage from CDN
 
-Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@anyblades/pico) to link pico.css.
+Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@anyblades/pico) to link pico.css:
 
 <!--prettier-ignore-->
 ```html
 <link rel="stylesheet" href="
   https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.min.css
 "/>
-```
 
-Or Pico+[Blades](https://blades.ninja/):
-
-<!--prettier-ignore-->
-```html
+<!-- or Pico+Blades together:
 <link rel="stylesheet" href="
   https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.blades.min.css
 "/>
+-->
 ```
 
 ### Install with NPM
 
 ```shell
-npm install @anyblades/pico
+npm install @anyblades/pico@alpha
 ```
 
 Then, import Pico into your <ins>CSS</ins> <del>SCSS file with [@use](https://sass-lang.com/documentation/at-rules/use)</del>:
 
 ```css
-@import "pico";
+@import "@anyblades/pico";
+
+/* or Pico+Blades together:
+@import "@anyblades/pico.blades";
+*/
 ```
 
 ### <del>Install with Composer</del>

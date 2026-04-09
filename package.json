@@ -6,7 +6,10 @@
   "contributors": [
     "Anton Staroverov"
   ],
-  "main": "css/pico.min.css",
+  "style": "css/pico.min.css",
+  "exports": {
+    ".": "./src/pico.css"
+  },
   "homepage": "https://picocss.com",
   "license": "MIT",
   "repository": {

@@ -3,5 +3,5 @@
  * Pico+Blades CSS ✨🥷 v2.2.0-alpha.4
  * Copyright 2026 - Licensed under MIT
  */
-@import "pico";
+@import "./pico";
 @import "@anyblades/blades";
