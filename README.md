@@ -37,7 +37,9 @@ https://blades.ninja/css/pico/#additions-in-pico-blades-css
 
 ---
 
-<p>
+<!--section:summary-->
+
+<h1>
   <a href="https://blades.ninja/css/pico/" target="_blank">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-dark.svg">
@@ -45,17 +47,23 @@ https://blades.ninja/css/pico/#additions-in-pico-blades-css
       <img alt="Pico CSS" src="https://raw.githubusercontent.com/anyblades/pico/HEAD/.github/logo-light.svg" width="auto" height="60" style="max-height: 4rem">
     </picture>
   </a>
-</p>
-
-[![Github release](https://img.shields.io/github/v/release/anyblades/pico?color=0172ad&logo=github&logoColor=white)](https://github.com/anyblades/pico/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-%230172ad)](https://github.com/anyblades/pico/blob/master/LICENSE.md)
-[![GitHub Repo stars](https://img.shields.io/github/stars/anyblades/pico?label=Star)](https://github.com/anyblades/pico)
+</h1>
 
 ## Minimal CSS Framework for Semantic HTML
 
 A minimalist and lightweight starter kit that prioritizes semantic syntax, making every HTML element responsive and elegant by default.
 
 Write HTML, Add Pico CSS, and Voilà!
+
+![](https://img.shields.io/github/v/release/anyblades/pico?label=&color=darkslategray&style=for-the-badge&include_prereleases)
+[![](https://img.shields.io/badge/Code-gainsboro?logo=github&logoColor=black&style=for-the-badge)](https://github.com/anyblades/pico)
+[![](https://img.shields.io/github/stars/anyblades/pico?label=Star&labelColor=gainsboro&color=silver&style=for-the-badge)](https://github.com/anyblades/pico)
+
+<!--section:gh-only-->
+
+## [Docs & Demos <i><small>→</small></i>](https://blades.ninja/css/pico/)
+
+<!--section:docs-->
 
 ## What’s new in v2?
 
