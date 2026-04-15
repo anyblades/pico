@@ -8,7 +8,8 @@
   ],
   "style": "css/pico.min.css",
   "exports": {
-    ".": "./src/pico.css"
+    ".": "./src/pico.blades.css",
+    "./core": "./src/pico.css"
   },
   "homepage": "https://picocss.com",
   "license": "MIT",
