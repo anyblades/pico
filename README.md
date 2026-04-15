@@ -88,14 +88,14 @@ Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@
 <!--prettier-ignore-->
 ```html
 <link rel="stylesheet" href="
-  https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-alpha/css/pico.blades.min.css
+  https://cdn.jsdelivr.net/npm/@anyblades/pico@^2.2.0-beta/css/pico.blades.min.css
 "/>
 ```
 
 ### Install with NPM
 
 ```sh
-npm install @anyblades/pico@alpha @anyblades/blades@alpha
+npm install @anyblades/pico@beta @anyblades/blades
 ```
 
 Then, import Pico+*Bl*ades into your CSS:
