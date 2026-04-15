@@ -19,7 +19,7 @@
   </a>
 </h1>
 
-## Minimal CSS Framework for Semantic HTML
+<big>Minimal CSS Framework for Semantic HTML</big>
 
 A minimalist and lightweight starter kit that prioritizes semantic syntax, making every HTML element responsive and elegant by default.
 
