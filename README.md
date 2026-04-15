@@ -95,13 +95,14 @@ Alternatively, you can use [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@
 ### Install with NPM
 
 ```sh
-npm install @anyblades/pico@alpha
+npm install @anyblades/pico@alpha @anyblades/blades@alpha
 ```
 
 Then, import Pico+*Bl*ades into your CSS:
 
 ```css
 @import "@anyblades/pico";
+@import "@anyblades/blades";
 ```
 
 ### Starter HTML template <!-- from index.html -->
