@@ -71,6 +71,8 @@ With just the right amount of everything, Pico is great starting point for a cle
 
 ## Quick start
 
+<!--section:docs,install-->
+
 There are 4 ways to get started with Pico+*Bl*ades CSS:
 
 ### Install manually
@@ -124,6 +126,8 @@ Then, import Pico+*Bl*ades into your CSS:
   </body>
 </html>
 ```
+
+<!--section:docs-->
 
 ---
 
