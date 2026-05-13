@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Pico CSS ✨ v2.2.0
+ * Pico CSS ✨ v2.2
  * Copyright 2019-2025 (https://picocss.com)
  * Copyright 2026 (https://blades.ninja/css/pico/)
  * Licensed under MIT
@@ -1794,6 +1794,7 @@ input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]):is(
   background-position: center right var(--pico-icon-position);
   background-size: var(--pico-icon-width) auto;
   background-repeat: no-repeat;
+  min-width: 0;
 }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="time"] {
   background-image: var(--pico-icon-time);
@@ -2723,7 +2724,7 @@ aside li a {
 aside li [role="button"] {
   margin: inherit;
 }
-[dir="rtl"] nav[aria-label="breadcrumb"] ul li:not(:last-child) ::after {
+[dir="rtl"] nav[aria-label="breadcrumb"] ul li:not(:last-child)::after {
   content: "\\";
 }
 /**
