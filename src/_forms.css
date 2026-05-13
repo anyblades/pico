@@ -517,6 +517,7 @@ input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]):is(
   background-position: center right var(--pico-icon-position);
   background-size: var(--pico-icon-width) auto;
   background-repeat: no-repeat;
+  min-width: 0;
 }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="time"] {
   background-image: var(--pico-icon-time);
