@@ -48,6 +48,7 @@ Now including all features from [*Bl*ades CSS](https://github.com/anyblades/blad
 
 Also, it includes [various fixes](https://codepen.io/anydigital/full/YPGOXWV) for [original @picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd): <!--Z-A-->
 
+- [#738 🐞 Submit button margin affecting siblings within .grid](https://github.com/picocss/pico/issues/738)
 - [#734 🐞 RTL breadcrumbs add weird backslashes](https://github.com/picocss/pico/issues/734)
 - [#733 🐞 Fix for datetime input width within groups within grids on medium breakpoint](https://github.com/picocss/pico/issues/733)
 - [#731 🛠️ Allow to selectively unreduce motion like `[aria-busy="true"]` does](https://github.com/picocss/pico/issues/731)
