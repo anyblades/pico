@@ -770,8 +770,9 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
   }
 }
-.grid > * {
+.grid > *:not(.does-not-exist) {
   min-width: 0;
+  margin-bottom: 0; /* https://github.com/picocss/pico/issues/738 */
 }
 /**
  * Overflow auto
