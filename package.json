@@ -6,7 +6,6 @@
   "contributors": [
     "Anton Staroverov"
   ],
-  "style": "css/pico.min.css",
   "exports": {
     ".": "./src/pico.css"
   },
@@ -44,10 +43,8 @@
   "devDependencies": {
     "@anyblades/blades": "^2.2.0",
     "autoprefixer": "^10.4.21",
-    "caniuse-lite": "1.0.30001704",
     "clean-css-cli": "^5.6.3",
     "css-declaration-sorter": "^7.2.0",
-    "nodemon": "^3.1.9",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",

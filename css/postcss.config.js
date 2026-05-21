@@ -4,6 +4,9 @@ module.exports = {
     autoprefixer: {
       cascade: false,
     },
+    "css-declaration-sorter": {
+      order: "smacss"
+    },
     "postcss-import": {
       //TODO: add to tricks
       // This forces the use of Node's resolution logic which respects 'exports'
@@ -15,6 +18,6 @@ module.exports = {
         }
       },
     },
-    "postcss-nested": {},
+    "postcss-nested": {}
   },
 };
