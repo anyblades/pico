@@ -9,7 +9,7 @@
   "exports": {
     ".": "./src/pico.css"
   },
-  "homepage": "https://picocss.com",
+  "homepage": "https://blades.ninja/css/pico/",
   "license": "MIT",
   "repository": {
     "type": "git",
