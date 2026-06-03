@@ -154,6 +154,10 @@ With just the right amount of everything, Pico is great starting point for a cle
 
 ---
 
+## Featured by
+
+- https://trendshift.io/repositories/29875
+
 ## Limitations
 
 Pico CSS can be used without custom CSS for quick or small projects. However, it’s designed as a starting point, like a “reset CSS on steroids”. As Pico does not integrate many helpers or utility `.classes`, it requires CSS knowledge to build large projects.
