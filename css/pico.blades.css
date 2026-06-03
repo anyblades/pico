@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*!
- * Pico+Blades CSS ✨🥷 v2.2
+ * Pico+Blades CSS ✨🥷 v2.3
  * Copyright 2026 (https://blades.ninja/css/pico/)
  * Licensed under MIT
  */
 /*!
- * Pico CSS ✨ v2.2
+ * Pico CSS ✨ v2.3
  * Copyright 2019-2025 (https://picocss.com)
  * Copyright 2026 (https://blades.ninja/css/pico/)
  * Licensed under MIT
@@ -1032,12 +1032,12 @@ button,
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
   transition:
     background-color var(--pico-transition),
     border-color var(--pico-transition),
     color var(--pico-transition),
     box-shadow var(--pico-transition);
+  user-select: none;
 }
 button:is([aria-current]:not([aria-current="false"])),
 button:is(:hover, :active, :focus),
@@ -1795,12 +1795,12 @@ input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]):is(
   ) {
   --pico-icon-position: 0.75rem;
   --pico-icon-width: 1rem;
+  min-width: 0;
   padding-right: calc(var(--pico-icon-width) + var(--pico-icon-position));
   background-image: var(--pico-icon-date);
   background-position: center right var(--pico-icon-position);
   background-size: var(--pico-icon-width) auto;
   background-repeat: no-repeat;
-  min-width: 0;
 }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="time"] {
   background-image: var(--pico-icon-time);
@@ -2164,12 +2164,12 @@ details.dropdown > summary:not([role]) {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
   transition:
     background-color var(--pico-transition),
     border-color var(--pico-transition),
     color var(--pico-transition),
     box-shadow var(--pico-transition);
+  user-select: none;
 }
 details.dropdown > summary:not([role]):active,
 details.dropdown > summary:not([role]):focus {
@@ -3052,8 +3052,8 @@ How it works:
 ```css */
 [data-jump-to="top"] {
   position: fixed;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   padding-top: 50vh;
 }
 /*```
@@ -3063,10 +3063,17 @@ How it works:
 ```css */
 .breakout,
 .breakout-all {
+  max-width: calc(10% + 65ch + 10%);
   /* Prepare the container for breakout elements */
   padding-inline: 10%;
-  max-width: calc(10% + 65ch + 10%);
 }
+@media (width < 768px) {
+.breakout,
+.breakout-all {
+    max-width: calc(1rem + 65ch + 1rem);
+    padding-inline: 1rem
+}
+  }
 /* Breakout direct children only */
 .breakout > *:is(
       table,
@@ -3089,7 +3096,7 @@ How it works:
       width: -moz-fit-content;
       width: fit-content;
       min-width: 100%;
-      max-width: 125%;
+      max-width: min(125%, 100dvw);
       margin-left: 50%;
       transform: translateX(-50%);
     }
@@ -3099,24 +3106,24 @@ How it works:
     }
 /* Max out the width of the element */
 .breakout > *.breakout-item-max, .breakout-all > *.breakout-item-max {
-      width: 125% !important; /* !important is for cases like figure.breakout-item-max @TODO */
+      width: min(125%, 100dvw) !important; /* !important is for cases like figure.breakout-item-max @TODO */
     }
 .breakout-all > *:is(h2, h3, h4, h5, h6, hr):not([class]) {
     position: relative;
   }
 .breakout-all > *:is(h2, h3, h4, h5, h6, hr):not([class])::before {
-      content: "";
       display: block;
       position: absolute;
       background: gray;
+      content: "";
       opacity: 12.5%;
     }
 .breakout-all > *:is(h2, h3, h4, h5, h6):not([class])::before {
-      width: 10em;
-      right: 100%;
-      margin-right: 0.8ch;
-      height: 0.25em;
       top: 50%;
+      right: 100%;
+      width: 10em;
+      height: 0.25em;
+      margin-right: 0.8ch;
       transform: translateY(-50%);
       background: linear-gradient(to left, gray, transparent);
     }
@@ -3126,12 +3133,12 @@ How it works:
       }
 .breakout-all > *:is(hr) {
     height: 0.5rem;
-    border: none;
     overflow: visible;
+    border: none;
   }
 .breakout-all > *:is(hr)::before {
-      width: 100vw;
       left: 50%;
+      width: 100dvw;
       height: 100%;
       transform: translateX(-50%);
     }
@@ -3198,18 +3205,18 @@ h5,
 h6 {
   position: relative;
 }
-h1 a[href^="#"], h2 a[href^="#"], h3 a[href^="#"], h4 a[href^="#"], h5 a[href^="#"], h6 a[href^="#"] {
+h1 a[aria-hidden="true"], h2 a[aria-hidden="true"], h3 a[aria-hidden="true"], h4 a[aria-hidden="true"], h5 a[aria-hidden="true"], h6 a[aria-hidden="true"] {
+    visibility: hidden;
     position: absolute;
-    right: 100%;
     top: 50%;
-    transform: translateY(-50%);
+    right: 100%;
     padding-right: 0.2ch;
+    transform: translateY(-50%);
     color: silver;
     text-decoration: none;
-    visibility: hidden;
   }
 @media /* to avoid double-tap on touch devices */ (hover: hover) {
-      h1:hover a[href^="#"], h2:hover a[href^="#"], h3:hover a[href^="#"], h4:hover a[href^="#"], h5:hover a[href^="#"], h6:hover a[href^="#"] {
+      h1:hover a[aria-hidden="true"], h2:hover a[aria-hidden="true"], h3:hover a[aria-hidden="true"], h4:hover a[aria-hidden="true"], h5:hover a[aria-hidden="true"], h6:hover a[aria-hidden="true"] {
         visibility: visible;
       }
   }
@@ -3252,9 +3259,32 @@ ul li[data-marker]::marker, ol li[data-marker]::marker {
   }
 /*```
 
+### Markerless
+
+`.markerless` removes markers and reduces padding:
+
+<article>
+
+- 1️⃣ so you can use
+- 2️⃣ emojis or images
+- 3️⃣ instead of bullets
+
+{.markerless}
+</article>
+
+How it works:
+```css */
+ul.markerless, ol.markerless {
+    padding-inline-start: 1.25rem;
+  }
+ul.markerless li, ol.markerless li {
+      list-style: none;
+    }
+/*```
+
 ### Unlist
 
-`.unlist` removes list styling:
+`.unlist` removes list styling at all:
 
 <article>
 
@@ -3265,7 +3295,7 @@ ul li[data-marker]::marker, ol li[data-marker]::marker {
 {.unlist .grid style=margin:0}
 </article>
 
-`.unlist-all` also removes styling from all nested lists.
+`.unlist-all` removes styling from all nested lists too.
 
 How it works:
 ```css */
@@ -3288,20 +3318,21 @@ ul.unlist > li, ul.unlist-all > li, .unlist-all ul > li, ol.unlist > li, ol.unli
 /* Use inline flex only if link contains an icon */
 a:has(> i) {
     display: inline-flex;
-    gap: 0.375ch; /* =3/8 */
     overflow-y: clip; /* to work in pair with text-underline-offset in Safari */
+    gap: 0.375ch; /* =3/8 */
+    text-wrap: balance;
   }
 a > i {
-    font-style: normal;
     float: left; /*                 ✅ Chrome ❌ Safari */
+    font-style: normal;
     text-underline-offset: -2em; /* ❌ Chrome ✅ Safari - to clip it with overflow-y */
   }
 /* Favicons */
 a > i > img {
+      display: inline-block; /* for Tailwind CSS Typography */
+      max-width: none; /* to keep ratio safe */
       height: 1.25em;
       margin-block-start: calc(-0.25em / 2);
-      max-width: none; /* to keep ratio safe */
-      display: inline-block; /* for Tailwind CSS Typography */
     }
 a > i[class^="fa-"],
     a > i[class*=" fa-"] {
@@ -3363,10 +3394,10 @@ Living examples of big tables with `<hr>`-expanders: \3c !--A-Z-->
 How it works:
 ```css */
 th hr {
+    visibility: hidden;
     width: 12ch; /* min ~65/12 = ~5 cols */
     height: 0;
     margin: 0;
-    visibility: hidden;
   }
 th hr.lg {
       width: 18ch;
@@ -3402,20 +3433,20 @@ table.borderless th,
 table.responsive,
 .breakout > table:not(.does-not-exist),
 .breakout-all > table:not(.does-not-exist) {
-  /* Center horizontally */
-  margin-left: 50%;
-  transform: translateX(-50%);
+
+  /* Let them scroll */
+  display: block;
 
   /* Let them full-bleed */
   width: -moz-max-content;
   width: max-content;
   min-width: auto;
-  max-width: 100vw;
+  max-width: 100dvw;
+  /* Center horizontally */
+  margin-left: 50%;
   padding-inline: 7.5%;
-
-  /* Let them scroll */
-  display: block;
   overflow-x: auto;
+  transform: translateX(-50%);
   -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
 }
 table.responsive th,
@@ -3461,7 +3492,7 @@ Living examples: \3c !--A-Z-->
 The `<pre><code>` blocks are Prism-compatible and support captions via `data-caption="..."` attribute:
 
 ```treeview {data-caption="Blades CSS:"}
-./assets/
+./css/
 ├── blades.core.css     # reusable class-light utilities, unthemed
 ├── blades.theme.css    # minimal opinionated theme
 └── blades.css          # above two together
@@ -3479,26 +3510,15 @@ pre {
   }
 /* Code block caption via data-attr (to display filename, etc.) */
 code[data-caption]::before {
-      content: attr(data-caption);
       display: block;
       margin-bottom: 1rem;
-      opacity: 50%;
+      content: attr(data-caption);
       font-style: italic;
+      opacity: 50%;
     }
 code:where(pre > *) {
     padding: 0;
   }
-/* Extends https://github.com/PrismJS/prism/blob/master/plugins/treeview/prism-treeview.css */
-.token.treeview-part .entry-line {
-    width: 2.5em !important;
-    opacity: 25%;
-  }
-.token.treeview-part .entry-name:last-child {
-    opacity: 50%;
-  }
-.token.treeview-part .entry-name:last-child::before {
-      display: none !important;
-    }
 /*```
 \3c !--section--> */
 /* Forms */
@@ -3523,10 +3543,10 @@ label:has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea
   .has-float-label > span,
   .has-float-label label {
     position: absolute;
-    left: 0;
     top: 0;
-    cursor: text;
+    left: 0;
     font-size: 75%;
+    cursor: text;
   }
 /*
 ```
@@ -3664,12 +3684,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  /* Ensure `body` takes at least the full height of the viewport (using dynamic viewport height for better mobile support). */
-  min-height: 100dvh;
 
   /* Make the `body` a flex container with column layout, and `main` to automatically fill available space. This is useful for creating sticky footers and full-height layouts. */
   display: flex;
   flex-direction: column;
+  /* Ensure `body` takes at least the full height of the viewport (using dynamic viewport height for better mobile support). */
+  min-height: 100dvh;
 
   /* Evaluates the last ~4 lines of text blocks to prevent a single word from sitting on the final line. */
 
@@ -3680,8 +3700,8 @@ body > main {
     flex-grow: 1;
   }
 body{
-  text-wrap: pretty;
   hyphens: auto;
+  text-wrap: pretty;
 }
 body a,
   body table {
@@ -3694,8 +3714,8 @@ a:not([href^="#"]):hover {
       text-decoration-thickness: 2px;
     }
 h1 {
-  font-size: 2.5em; /* for pico.css & tw-typography */
   margin-bottom: 1rem; /* for tw-typography */
+  font-size: 2.5em; /* for pico.css & tw-typography */
 }
 hr {
   margin-block: 2em; /* for pico.css & tw-typography */
@@ -3704,12 +3724,12 @@ ul ul {
     font-size: 87.5%;
   }
 pre small {
-    opacity: 75%;
     font-weight: lighter;
+    opacity: 75%;
   }
 table th {
-    vertical-align: bottom;
     font-weight: bold;
+    vertical-align: bottom;
   }
 table td {
     vertical-align: top;
@@ -3725,11 +3745,11 @@ table pre {
   }
 [data-jump-to="top"] > i {
     display: inline-block;
-    padding: 0.25rem 0.375rem;
     margin: 0.5rem;
-    font-size: 0.75rem;
-    color: black;
+    padding: 0.25rem 0.375rem;
     border-color: black;
+    color: black;
+    font-size: 0.75rem;
   }
 .breakout > img,
   .breakout > figure,

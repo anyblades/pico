@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Pico CSS ✨ v2.2
+ * Pico CSS ✨ v2.3
  * Copyright 2019-2025 (https://picocss.com)
  * Copyright 2026 (https://blades.ninja/css/pico/)
  * Licensed under MIT
@@ -1027,12 +1027,12 @@ button,
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
   transition:
     background-color var(--pico-transition),
     border-color var(--pico-transition),
     color var(--pico-transition),
     box-shadow var(--pico-transition);
+  user-select: none;
 }
 button:is([aria-current]:not([aria-current="false"])),
 button:is(:hover, :active, :focus),
@@ -1790,12 +1790,12 @@ input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]):is(
   ) {
   --pico-icon-position: 0.75rem;
   --pico-icon-width: 1rem;
+  min-width: 0;
   padding-right: calc(var(--pico-icon-width) + var(--pico-icon-position));
   background-image: var(--pico-icon-date);
   background-position: center right var(--pico-icon-position);
   background-size: var(--pico-icon-width) auto;
   background-repeat: no-repeat;
-  min-width: 0;
 }
 input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"])[type="time"] {
   background-image: var(--pico-icon-time);
@@ -2159,12 +2159,12 @@ details.dropdown > summary:not([role]) {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
   transition:
     background-color var(--pico-transition),
     border-color var(--pico-transition),
     color var(--pico-transition),
     box-shadow var(--pico-transition);
+  user-select: none;
 }
 details.dropdown > summary:not([role]):active,
 details.dropdown > summary:not([role]):focus {
