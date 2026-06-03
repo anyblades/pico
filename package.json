@@ -1,6 +1,6 @@
 {
   "name": "@anyblades/pico",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "description": "Minimal CSS Framework for semantic HTML",
   "author": "Lucas Larroche",
   "contributors": [
@@ -41,7 +41,7 @@
     "build:minify": "cleancss -O1 --with-rebase --batch --batch-suffix .min css/*.css !css/*.min.css"
   },
   "devDependencies": {
-    "@anyblades/blades": "^2.2.0",
+    "@anyblades/blades": "^2.3.0",
     "autoprefixer": "^10.4.21",
     "clean-css-cli": "^5.6.3",
     "css-declaration-sorter": "^7.2.0",
