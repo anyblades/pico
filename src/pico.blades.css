@@ -5,4 +5,4 @@
  * Licensed under MIT
  */
 @import "./pico";
-@import "@anyblades/blades";
+@import "@anyblades/blades/standalone";
