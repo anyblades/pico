@@ -72,7 +72,7 @@ With just the right amount of everything, Pico is great starting point for a cle
 
 ---
 
-## [Quick start](https://blades.ninja/css/pico/#quick-start)
+## [Quick start](//blades.ninja/css/pico/#quick-start)
 
 <!--section:docs2-->
 
