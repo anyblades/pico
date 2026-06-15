@@ -83,74 +83,76 @@ With just the right amount of everything, Pico is great starting point for a cle
 <!-- ToC as is from https://blades.ninja/#docs -->
 <ul class="columns">
   
-  <li>
-    <strong><a href="/">Get started</a></strong>
-    <ul><li><a href="https://blades.ninja/css/">Quick start</a></li>
-<li><a href="https://blades.ninja/css/color-schemes/">Color schemes</a></li>
-<li><a href="https://blades.ninja/css/variables/">CSS variables</a></li>
-<li><a href="https://blades.ninja/css/standalone/">Standalone version <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/pico/">Pico fork <img src="https://img.shields.io/github/v/release/anyblades/pico?label=&amp;color=white"> <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/frameworks/">Frameworks</a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/css/">Get started</a></strong>
+      <ul><li><a href="//blades.ninja/css/">Quick start</a></li>
+<li><a href="//blades.ninja/css/standalone/">Standalone versions <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/ninja/">Ninja add-ons <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/color-schemes/">Color schemes</a></li>
+<li><a href="//blades.ninja/css/pico/">Pico fork <img src="//img.shields.io/github/v/release/anyblades/pico?label=&amp;color=white"> <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/variables/">CSS variables</a></li>
+<li><a href="//blades.ninja/css/frameworks/">Frameworks</a></li></ul>
+    </li>
   
-  <li>
-    <strong><a href="/css/layout/">Layout</a></strong>
-    <ul><li><a href="https://blades.ninja/css/container/">Container</a></li>
-<li><a href="https://blades.ninja/css/breakout/">Breakout container <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/landmarks-section/">Landmarks &amp; section</a></li>
-<li><a href="https://blades.ninja/css/grid/">Grid</a></li>
-<li><a href="https://blades.ninja/css/columns/">Text columns <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/overflow-auto/">Overflow auto</a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/css/layout/">Layout</a></strong>
+      <ul><li><a href="//blades.ninja/css/container/">Container</a></li>
+<li><a href="//blades.ninja/css/breakout/">Breakout container <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/landmarks-section/">Landmarks &amp; section</a></li>
+<li><a href="//blades.ninja/css/grid/">Grid</a></li>
+<li><a href="//blades.ninja/css/columns/">Text columns <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/overflow-auto/">Overflow auto</a></li></ul>
+    </li>
   
-  <li>
-    <strong><a href="/css/content/">Content</a></strong>
-    <ul><li><a href="https://blades.ninja/css/typography/">Typography</a></li>
-<li><a href="https://blades.ninja/css/heading/">Heading helpers <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/link/">Link</a></li>
-<li><a href="https://blades.ninja/css/link-icon/">Link icon <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/button/">Button</a></li>
-<li><a href="https://blades.ninja/css/table/">Table <mark>UPD</mark></a></li>
-<li><a href="https://blades.ninja/css/responsive-table/">Responsive table <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/list/">List helpers <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/code/">Code formatting <mark>NEW</mark></a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/css/content/">Content</a></strong>
+      <ul><li><a href="//blades.ninja/css/typography/">Typography</a></li>
+<li><a href="//blades.ninja/css/heading/">Heading helpers <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/link/">Link</a></li>
+<li><a href="//blades.ninja/css/link-icon/">Link icon <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/button/">Button</a></li>
+<li><a href="//blades.ninja/css/table/">Table <mark>UPD</mark></a></li>
+<li><a href="//blades.ninja/css/responsive-table/">Responsive table <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/list/">List helpers <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/code/">Code formatting <mark>NEW</mark></a></li></ul>
+    </li>
   
-  <li>
-    <strong><a href="/css/forms/">Forms</a></strong>
-    <ul><li><a href="https://blades.ninja/css/forms/">Overview</a></li>
-<li><a href="https://blades.ninja/css/input/">Input</a></li>
-<li><a href="https://blades.ninja/css/textarea/">Textarea</a></li>
-<li><a href="https://blades.ninja/css/select/">Select</a></li>
-<li><a href="https://blades.ninja/css/checkboxes/">Checkboxes</a></li>
-<li><a href="https://blades.ninja/css/radios/">Radios</a></li>
-<li><a href="https://blades.ninja/css/switch/">Switch</a></li>
-<li><a href="https://blades.ninja/css/range/">Range</a></li>
-<li><a href="https://blades.ninja/css/float-label/">Float labels <mark>NEW</mark></a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/css/forms/">Forms</a></strong>
+      <ul><li><a href="//blades.ninja/css/forms/">Overview</a></li>
+<li><a href="//blades.ninja/css/input/">Input</a></li>
+<li><a href="//blades.ninja/css/textarea/">Textarea</a></li>
+<li><a href="//blades.ninja/css/select/">Select</a></li>
+<li><a href="//blades.ninja/css/checkboxes/">Checkboxes</a></li>
+<li><a href="//blades.ninja/css/radios/">Radios</a></li>
+<li><a href="//blades.ninja/css/switch/">Switch</a></li>
+<li><a href="//blades.ninja/css/range/">Range</a></li>
+<li><a href="//blades.ninja/css/float-label/">Float labels <mark>NEW</mark></a></li></ul>
+    </li>
   
-  <li>
-    <strong><a href="/css/components/">Components</a></strong>
-    <ul><li><a href="https://blades.ninja/css/accordion/">Accordion</a></li>
-<li><a href="https://blades.ninja/css/card/">Card</a></li>
-<li><a href="https://blades.ninja/css/dropdown/">Dropdown</a></li>
-<li><a href="https://blades.ninja/css/group/">Group</a></li>
-<li><a href="https://blades.ninja/css/loading/">Loading</a></li>
-<li><a href="https://blades.ninja/css/modal/">Modal</a></li>
-<li><a href="https://blades.ninja/css/navigation/">Navigation</a></li>
-<li><a href="https://blades.ninja/css/progress/">Progress</a></li>
-<li><a href="https://blades.ninja/css/tooltip/">Tooltip</a></li>
-<li><a href="https://blades.ninja/css/jump/">Jump to... <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/css/utils/">Utilities <mark>NEW</mark></a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/css/components/">Components</a></strong>
+      <ul><li><a href="//blades.ninja/css/accordion/">Accordion</a></li>
+<li><a href="//blades.ninja/css/card/">Card</a></li>
+<li><a href="//blades.ninja/css/dropdown/">Dropdown</a></li>
+<li><a href="//blades.ninja/css/group/">Group</a></li>
+<li><a href="//blades.ninja/css/loading/">Loading</a></li>
+<li><a href="//blades.ninja/css/modal/">Modal</a></li>
+<li><a href="//blades.ninja/css/nav/">Navigation</a></li>
+<li><a href="//blades.ninja/css/progress/">Progress</a></li>
+<li><a href="//blades.ninja/css/tooltip/">Tooltip</a></li>
+<li><a href="//blades.ninja/css/timeline/">Timeline <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/jump/">Jump to... <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/css/utils/">Utilities <mark>NEW</mark></a></li></ul>
+    </li>
   
-  <li>
-    <strong><a href="/html/">Templates <mark>NEW</mark></a></strong>
-    <ul><li><a href="https://blades.ninja/html/">Overview</a></li>
-<li><a href="https://blades.ninja/html/starter/">HTML starter <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/html/links/">Links <mark>NEW</mark></a></li>
-<li><a href="https://blades.ninja/html/sitemap/">Sitemap <mark>NEW</mark></a></li></ul>
-  </li>
+    <li>
+      <strong><a href="//blades.ninja/html/">Templates <mark>NEW</mark></a></strong>
+      <ul><li><a href="//blades.ninja/html/">Overview</a></li>
+<li><a href="//blades.ninja/html/starter/">HTML starter <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/html/links/">Links <mark>NEW</mark></a></li>
+<li><a href="//blades.ninja/html/sitemap/">Sitemap <mark>NEW</mark></a></li></ul>
+    </li>
   
 </ul>
 
