@@ -515,6 +515,7 @@ svg:not(:host) {
  */
 pre,
 code,
+var,
 kbd,
 samp {
   font-size: 0.875em;
@@ -534,6 +535,7 @@ pre {
 
 pre,
 code,
+var,
 kbd,
 samp {
   border-radius: var(--pico-border-radius);
@@ -544,6 +546,7 @@ samp {
 }
 
 code,
+var,
 kbd,
 samp {
   display: inline-block;
