@@ -507,7 +507,7 @@ img {
   fill: currentColor;
 }
 
-svg:not(:root),
+svg:not(:scope),
 svg:not(:host) {
   overflow: hidden;
 }

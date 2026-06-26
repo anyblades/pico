@@ -15,7 +15,7 @@
   vertical-align: inherit;
 }
 
-:where(:root),
+:where(:scope),
 :where(:host) {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;

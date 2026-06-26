@@ -488,7 +488,7 @@ a[aria-busy="true"] {
 /**
  * Modal (<dialog>)
  */
-:root,
+:scope,
 :host {
   --pico-scrollbar-width: 0px;
 }
