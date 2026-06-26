@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /*!
- * Pico+Blades CSS ✨🥷 v2.4
- * Copyright 2026 (https://blades.ninja/css/pico/)
+ * Blades CSS 🥷 v2.4
+ * Copyright 2026 (https://blades.ninja/)
  * Licensed under MIT
  */
 /*!
- * Pico CSS ✨ v2.4
+ * Pico CSS ✨ v2.5
  * Copyright 2019-2025 (https://picocss.com)
  * Copyright 2026 (https://blades.ninja/css/pico/)
  * Licensed under MIT
@@ -13,7 +12,7 @@
 /**
  * Variables
  */
-:root,
+:scope,
 :host {
   --pico-font-family-emoji:
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -60,31 +59,31 @@
   --pico-icon-loading: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' %3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='rgb(136, 145, 164)' stroke-width='4' /%3E%3C/g%3E%3C/svg%3E");
 }
 @media (min-width: 576px) {
-  :root,
+  :scope,
   :host {
     --pico-font-size: 106.25%;
   }
 }
 @media (min-width: 768px) {
-  :root,
+  :scope,
   :host {
     --pico-font-size: 112.5%;
   }
 }
 @media (min-width: 1024px) {
-  :root,
+  :scope,
   :host {
     --pico-font-size: 118.75%;
   }
 }
 @media (min-width: 1280px) {
-  :root,
+  :scope,
   :host {
     --pico-font-size: 125%;
   }
 }
 @media (min-width: 1536px) {
-  :root,
+  :scope,
   :host {
     --pico-font-size: 131.25%;
   }
@@ -239,7 +238,7 @@ details summary[role="button"]:not(.outline)::after {
  * Color schemes
  */
 [data-theme="light"],
-:root:not([data-theme="dark"]),
+:scope:not([data-theme="dark"]),
 :host(:not([data-theme="dark"])) {
   color-scheme: light;
   --pico-background-color: #fff;
@@ -353,7 +352,7 @@ details summary[role="button"]:not(.outline)::after {
     [type="radio"],
     [type="file"]
   ),
-:root:not([data-theme="dark"])
+:scope:not([data-theme="dark"])
   input:is(
     [type="submit"],
     [type="button"],
@@ -374,7 +373,7 @@ details summary[role="button"]:not(.outline)::after {
   --pico-form-element-focus-color: var(--pico-primary-focus);
 }
 @media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]),
+  :scope:not([data-theme]),
   :host(:not([data-theme])) {
     color-scheme: dark;
     --pico-background-color: rgb(19, 22.5, 30.5);
@@ -479,7 +478,7 @@ details summary[role="button"]:not(.outline)::after {
     --pico-icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(42, 123, 111)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
     --pico-icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(149.5, 74, 80)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");
   }
-  :root:not([data-theme])
+  :scope:not([data-theme])
     input:is(
       [type="submit"],
       [type="button"],
@@ -499,11 +498,11 @@ details summary[role="button"]:not(.outline)::after {
     ) {
     --pico-form-element-focus-color: var(--pico-primary-focus);
   }
-  :root:not([data-theme]) details summary[role="button"].contrast:not(.outline)::after,
+  :scope:not([data-theme]) details summary[role="button"].contrast:not(.outline)::after,
   :host(:not([data-theme])) details summary[role="button"].contrast:not(.outline)::after {
     filter: brightness(0);
   }
-  :root:not([data-theme])
+  :scope:not([data-theme])
     [aria-busy="true"]:not(input, select, textarea).contrast:is(
       button,
       [type="submit"],
@@ -671,7 +670,7 @@ progress,
   text-decoration: inherit;
   vertical-align: inherit;
 }
-:where(:root),
+:where(:scope),
 :where(:host) {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
@@ -1230,13 +1229,13 @@ img:not([height]) {
     max-width: 100%;
     height: auto;
   }
-img{
+img {
   border-style: none;
 }
 :where(svg:not([fill])) {
   fill: currentColor;
 }
-svg:not(:root),
+svg:not(:scope),
 svg:not(:host) {
   overflow: hidden;
 }
@@ -2495,7 +2494,7 @@ a[aria-busy="true"] {
 /**
  * Modal (<dialog>)
  */
-:root,
+:scope,
 :host {
   --pico-scrollbar-width: 0px;
 }
@@ -3011,12 +3010,10 @@ textarea,
     transition-duration: 0s !important;
   }
 }
+/*\3c !--section:code-->```css */
 /* Follows https://github.com/picocss/pico/blob/main/scss/_index.scss */
 /* Layout */
-/* Extends https://github.com/picocss/pico/blob/main/scss/layout/
-\3c !--section:docs,columns-->
-
-### Auto-columns
+/*\3c !--section:columns-->
 
 `.columns` automatically creates columns with at least 30 characters each:
 
@@ -3043,10 +3040,7 @@ How it works:
     -moz-column-break-inside: avoid;
     break-inside: avoid;
   }
-/*```
-\3c !--section:docs,jump-->
-
-### Jump to top
+/*```\3c !--section:jump-->
 
 `data-jump-to="top"` fixes element to the corner and adds extra top padding to make it easy to click:
 ```css */
@@ -3056,8 +3050,6 @@ How it works:
   bottom: 0;
   padding-top: 50vh;
 }
-/*```
-\3c !--section--> */
 /*
 \3c !--section:code-->
 ```css */
@@ -3184,15 +3176,12 @@ Or anything else:
 
 \3c !--section--> */
 /* Content */
-/* Extends https://github.com/picocss/pico/blob/main/scss/content/_typography.scss
-\3c !--section:docs,h-anchor-->
-
-### Heading anchors
+/*\3c !--section:h-anchor-->
 
 Links with `href="#..."` inside headings are automatically displayed as anchors:
 
 <article>
-  <h2 style="margin: 0 0 0 1.5rem">Heading with anchor <a href="#hwa" style="visibility: visible">#</a></h2>
+  <h2 style="margin: 0 0 0 1.5rem">Heading with anchor <a aria-hidden="true" style="visibility: visible">#</a></h2>
 </article>
 
 How it works:
@@ -3224,9 +3213,7 @@ h1 a[aria-hidden="true"], h2 a[aria-hidden="true"], h3 a[aria-hidden="true"], h4
 
 **PRO** example of automatic anchors for `11ty`+`markdown-it-anchor`: https://github.com/anyblades/eleventy-blades/blob/main/src/eleventy.config.js
 
-\3c !--section:docs,list-->
-
-### List markers
+\3c !--section:list-->
 
 Customize markers using inline `style="--list-marker:..."` on `<ul>/<ol>` or even individual `<li>`:
 
@@ -3310,37 +3297,35 @@ ul.unlist,
 ul.unlist > li, ul.unlist-all > li, .unlist-all ul > li, ol.unlist > li, ol.unlist-all > li, .unlist-all ol > li {
       list-style: none;
     }
-/*```
-\3c !--section--> */
 /* Extends https://github.com/picocss/pico/blob/main/scss/content/_link.scss
 \3c !--section:code-->
 ```css */
 /* Use inline flex only if link contains an icon */
-a:has(> i) {
+a:not(.does-not-exist):has(> i) {
     display: inline-flex;
     overflow-y: clip; /* to work in pair with text-underline-offset in Safari */
     gap: 0.375ch; /* =3/8 */
     text-wrap: balance;
   }
-a > i {
+a:not(.does-not-exist) > i {
     float: left; /*                 ✅ Chrome ❌ Safari */
     font-style: normal;
     text-underline-offset: -2em; /* ❌ Chrome ✅ Safari - to clip it with overflow-y */
   }
 /* Favicons */
-a > i > img:not(.does-not-exist) /* soft win specificity over img:not([height]) */ {
+a:not(.does-not-exist) > i > img {
       display: inline-block; /* for Tailwind CSS Typography */
       max-width: none; /* to keep ratio safe */
       height: 1.25em;
       margin-block-start: calc(-0.25em / 2);
     }
-a > i[class^="fa-"],
-    a > i[class*=" fa-"] {
+a:not(.does-not-exist) > i[class^="fa-"],
+    a:not(.does-not-exist) > i[class*=" fa-"] {
       line-height: inherit;
       --fa-width: auto;
     }
 /* Font Awesome */
-a > i.fa-lg {
+a:not(.does-not-exist) > i.fa-lg {
       line-height: normal;
     }
 /*```
@@ -3371,10 +3356,9 @@ How we made it: https://codepen.io/editor/anydigital/pen/019d2b94-5616-75dc-a23e
 **PRO** example of automatic favicons for `11ty`: https://blades.ninja/build-awesome-11ty/processors/#auto-link-favicons
 
 \3c !--section--> */
-/* Extends https://github.com/picocss/pico/blob/main/scss/content/_table.scss
-\3c !--section:docs-->
+/*\3c !--section:docs-->
 
-### Column expanders
+## Column expanders
 
 Place `<hr>` element inside `<th>` column to expand it horizontally:
 
@@ -3407,7 +3391,7 @@ th hr.x2 {
     }
 /*```
 
-### Borderless table
+## Borderless table
 
 `.borderless` removes all default borders:
 
@@ -3420,9 +3404,7 @@ th hr.x2 {
 {.borderless}
 </article>
 
-Living example: https://bladeswitch.com/#minimal-dependencies table
-
-\3c !--section--> */
+\3c !--section-->*/
 table.borderless th,
   table.borderless td {
     border: none;
@@ -3484,10 +3466,7 @@ Living examples: \3c !--A-Z-->
 - https://blades.ninja/ssg/
 
 \3c !--section--> */
-/* Extends https://github.com/picocss/pico/blob/main/scss/content/_code.scss
-\3c !--section:docs-->
-
-### Code
+/*\3c !--section:docs-->
 
 The `<pre><code>` blocks are Prism-compatible and support captions via `data-caption="..."` attribute:
 
@@ -3497,7 +3476,8 @@ The `<pre><code>` blocks are Prism-compatible and support captions via `data-cap
 ├── blades.theme.css    # minimal opinionated theme
 └── blades.css          # above two together
 ```
-How it works:
+
+\3c !--section:code-->
 ```css */
 @media (width < 768px) {
 pre {
@@ -3512,25 +3492,23 @@ code[data-caption]::before {
       font-style: italic;
       opacity: 50%;
     }
-/*```
-\3c !--section--> */
 /* Forms */
-/* Moved here from https://github.com/anyblades/float-label-css for easier maintenance
+/* Sources moved here from https://github.com/anyblades/float-label-css for easier maintenance
 \3c !--section:docs-->
 
 First, we target either:
 1. `<label>` which `:has` inner form inputs (classless approach)
 2. or explicit `.has-float-label` class (explicit approach)
+
 ```css */
 label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select),
 .has-float-label {
   display: block;
   position: relative;
 }
-/*
-```
-Then, we define the default/fallback state (when the float label should be minimized):
-```css */
+/*```
+  Then, we define the default/fallback state (when the float label should be minimized):
+  ```css */
 label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select) > span,
   label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select) label,
   .has-float-label > span,
@@ -3541,10 +3519,9 @@ label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"
     font-size: 75%;
     cursor: text;
   }
-/*
-```
-Finally, we detect if placeholder is shown, but not in focus. That means we can safely hide it, and enlarge the float label instead:
-```css */
+/*```
+  Finally, we detect if placeholder is shown, but not in focus. That means we can safely hide it, and enlarge the float label instead:
+  ```css */
 label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select) *:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label *:placeholder-shown:not(:focus)::-moz-placeholder {
     opacity: 0;
   }
@@ -3565,12 +3542,13 @@ label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"
       font-size: inherit;
       opacity: 50%;
     }
-/*
-```
+/*```
+
 The `:has(*:placeholder-shown:not(:focus))` trick allows this input state information to *propagate* to the parent level. This enables modern CSS to target inner float label (`<span>` or `<label>`) regardless of its position relative to the input field.
 
 Historically, this was not possible: the float label had to be placed after the input field to be targeted using the `input:focus + label` selector.
-\3c !--section--> */
+
+\3c !--section-->*/
 /* Components */
 /*\3c !--section:docs-->
 
@@ -3593,12 +3571,10 @@ dl.timeline dd, .has-timeline > dl dd {
     padding: 0.25rem 0 0.75rem 1rem;
     border-inline-start: 0.25rem solid gray;
   }
-/*```*/
 /* Utilities */
-/* Extends https://github.com/picocss/pico/tree/main/scss/utilities
-\3c !--section:docs-->
+/*\3c !--section:docs-->
 
-### Auto-dark
+## Auto-dark
 
 `.dark-auto` automatically creates a simple dark version of any element:
 
@@ -3627,7 +3603,7 @@ How it works:
   }
 /*```
 
-### Faded
+## Faded
 
 `.faded` reduces the opacity of an element:
 
@@ -3649,9 +3625,7 @@ How it works:
 .invert ::-webkit-scrollbar {
     filter: invert(1) !important;
   }
-/*
-\3c !--section:code-->
-```css */
+/*\3c !--section:code-->```css */
 /* Default/fallback state */
 label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select) > span,
   label:has(> span):has(input:not([type="checkbox"], [type="radio"], [type="range"]), textarea, select) label,
@@ -3715,7 +3689,7 @@ body {
 body > main {
     flex-grow: 1;
   }
-body{
+body {
   hyphens: auto;
   text-wrap: pretty;
 }
@@ -3794,5 +3768,3 @@ table pre {
 .faded a {
     text-decoration-style: dotted;
   }
-/*```
-\3c !--section--> */

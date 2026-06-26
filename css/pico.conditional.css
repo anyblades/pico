@@ -1,3 +1,4 @@
+@scope (.pico) {
 /*!
  * Pico CSS ✨ v2.5
  * Copyright 2019-2025 (https://picocss.com)
@@ -3004,4 +3005,6 @@ textarea,
     transition-delay: 0s !important;
     transition-duration: 0s !important;
   }
+}
+
 }
