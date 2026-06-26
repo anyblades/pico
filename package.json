@@ -1,6 +1,6 @@
 {
   "name": "@anyblades/pico",
-  "version": "2.4.2",
+  "version": "2.5.0-alpha",
   "description": "Minimal CSS Framework for semantic HTML",
   "author": "Lucas Larroche",
   "contributors": [
@@ -35,13 +35,14 @@
     "url": "https://github.com/anyblades/pico/issues"
   },
   "scripts": {
-    "build": "npm run lint && npm run build:css && npm run build:minify",
-    "lint": "prettier --write --log-level silent 'src/**/*.css'",
-    "build:css": "postcss --config css 'src/!(_)*.css' --dir css --no-map",
-    "build:minify": "cleancss -O1 --with-rebase --batch --batch-suffix .min css/*.css !css/*.min.css"
+    "build": "npm run lint && npm run build:css && npm run build:minify && npm run build:conditional",
+    "lint": "prettier --write --log-level silent ./src/**/*.css",
+    "build:css": "postcss --config css './src/!(_)*.css' --dir css --no-map",
+    "build:minify": "cleancss -O1 --with-rebase --batch --batch-suffix .min ./css/*.css !./css/*.min.css !./css/pico.conditional.*",
+    "build:conditional": "for f in '' .min; do { printf '@scope (.pico) {\\n'; cat ./css/pico${f}.css; printf '\\n}\\n'; } > ./css/pico.conditional${f}.css; done"
   },
   "devDependencies": {
-    "@anyblades/blades": "^2.4.3",
+    "@anyblades/blades": "^2.4.9",
     "autoprefixer": "^10.4.21",
     "clean-css-cli": "^5.6.3",
     "css-declaration-sorter": "^7.2.0",
