@@ -42,7 +42,6 @@
     "build:conditional": "for f in '' .min; do { printf '@scope (.pico) {\\n'; cat ./css/pico${f}.css; printf '\\n}\\n'; } > ./css/pico.conditional${f}.css; done"
   },
   "devDependencies": {
-    "@anyblades/blades": "^2.4.9",
     "autoprefixer": "^10.4.21",
     "clean-css-cli": "^5.6.3",
     "css-declaration-sorter": "^7.2.0",
