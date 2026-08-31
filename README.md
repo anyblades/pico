@@ -158,9 +158,9 @@ With just the right amount of everything, Pico is great starting point for a cle
 
 ---
 
-## Featured by
+## <sup style>Trusted by</sup>
 
-- https://trendshift.io/repositories/29875
+- 🐍 [FastHTML](https://fastht.ml/)
 
 ## Limitations
 
