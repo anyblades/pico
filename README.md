@@ -5,7 +5,7 @@
 >
 > 1. **Maintain** `pico` minimally until its creator returns.
 > 2. **Focus** exclusively on the `pico.css` version, similar to how [simple.css](https://github.com/kevquirk/simple.css) is maintained (for Sass version check [@Yohn's fork](https://github.com/Yohn/PicoCSS) instead).
-> 3. **Keep** all net new features in https://github.com/anyblades/blades, shipped as `pico.blades.css` — a drop-in compatible replacement for `pico.css`.
+> 3. **Keep** all net new features in https://github.com/anyblades/blades, shipped as `blades.css` — a drop-in compatible replacement for `pico.css`.
 
 <!--section:docs,summary-->
 
@@ -42,9 +42,9 @@ Write HTML, Add Pico CSS, and Voilà!
 
 <!--section:docs-->
 
-## What’s new in v2.4? <!--{#fixes}-->
+## What’s new in v2.5? <!--{#fixes}-->
 
-Now including all features from [*Bl*ades CSS](https://github.com/anyblades/blades), shipped as `pico.blades.css` — a drop-in compatible replacement for `pico.css`.
+Now including all features from [*Bl*ades CSS](https://github.com/anyblades/blades), shipped as `blades.css` — a drop-in compatible replacement for `pico.css`.
 
 Also, it includes [various fixes](https://codepen.io/anydigital/full/YPGOXWV) for [original @picocss/pico issues](https://codepen.io/anydigital/full/WbGgbJd): <!--Z-A-->
 
